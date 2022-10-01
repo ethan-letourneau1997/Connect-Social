@@ -1,0 +1,574 @@
+/* GENERAL STYLES */
+
+:root {
+  --background: rgb(227, 227, 227);
+  --section: white;
+}
+
+html {
+  width: 100% !important;
+}
+
+.App {
+  background-color: var(--background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.justify {
+  display: flex;
+  justify-content: center;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+}
+
+.fit-content {
+  width: fit-content !important;
+}
+
+.btn {
+  border: 0 !important;
+
+  background-color: #7e45ce !important;
+  border: 1px solid #7e45ce !important;
+  width: 100%;
+}
+
+.small {
+  font-size: 0.8rem !important;
+}
+
+/* BODY */
+
+.body-container {
+  padding-top: 20px;
+  background-color: var(--background);
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+
+.account-row {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--section);
+}
+
+.icon {
+  display: flex;
+  align-self: center;
+
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+
+  background: url("./img/main-prof.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.options {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--section);
+  height: 40vh;
+}
+
+.active {
+  background-color: var(--background);
+  border-left: 2px solid #7e45ce;
+}
+
+.border-bottom {
+  border-bottom: 0.5px solid rgb(174, 174, 174);
+  padding: 10px;
+}
+
+.options-bottom {
+  padding-top: 10px;
+}
+
+.groups-title {
+  display: flex;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.groups {
+  background-color: var(--section);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.group {
+  height: 80px;
+  width: 90%;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  border-radius: 10px;
+}
+
+.group span {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group span:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.group1 {
+  background: url("./img/dogs.webp");
+  background-position: center;
+  background-size: cover;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 !important;
+}
+
+.group2 {
+  background: url("./img/coaster2.webp");
+  background-position: center;
+  background-size: cover;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 !important;
+}
+
+.group3 {
+  background: url("./img/surf2.webp");
+  background-position: center;
+  background-size: cover;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 !important;
+}
+
+.group span {
+  align-self: center;
+}
+
+/* Feed */
+
+.feed {
+  overflow: scroll;
+  height: 97vh;
+}
+
+.story-card {
+  height: 150px;
+  background-color: var(--section);
+  border-radius: 10px;
+}
+
+.add-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+
+  background: hsla(197, 100%, 63%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+
+.add-story div {
+  height: 100%;
+}
+
+.add-story span {
+  color: rgba(0, 0, 0, 0.618);
+}
+
+.fa-plus {
+  border: 2px solid rgba(0, 0, 0, 0.618);
+  color: rgba(0, 0, 0, 0.618);
+  border-radius: 50px;
+  padding: 1px;
+}
+
+.story1,
+.story2,
+.story3,
+.story4 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.story1 {
+  background-image: url("./img/story1.webp");
+  background-position: center;
+  background-size: cover;
+}
+.story2 {
+  background-image: url("./img/story2.webp");
+  background-position: center;
+  background-size: cover;
+}
+.story3 {
+  background-image: url("./img/story3.webp");
+  background-position: center;
+  background-size: cover;
+}
+.story4 {
+  background-image: url("./img/story4.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.search-row {
+  margin-top: 30px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--section);
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.search-bar {
+  width: 90%;
+  border: 0;
+}
+
+.post {
+  background-color: var(--section);
+  margin-top: 30px !important;
+  padding-top: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.left-pic {
+  background-color: rgb(214, 127, 127);
+  border-radius: 10px;
+  height: 100%;
+  grid-row: 1 / 3;
+  background-image: url("./img/left-image.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.top-right-pic {
+  background-color: rgb(214, 127, 127);
+  border-radius: 10px;
+  grid-row: 1 / 2;
+  height: 25vh;
+  margin-bottom: 10%;
+  background-image: url("./img/top-right-pic.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom-right-pic {
+  background-color: rgb(214, 127, 127);
+  border-radius: 10px;
+  grid-row: 2 / 3;
+  height: 25vh;
+  background-image: url("./img/bottom-right-pic.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.text-only-post {
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 20px !important;
+  padding: 10px;
+  margin-top: 30px !important;
+}
+
+.left-pic2 {
+  background: url("./img/beachpic2.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.top-right-pic2 {
+  background: url("./img/beachpic1.webp");
+  background-position: center;
+  background-size: cover;
+}
+.bottom-right-pic2 {
+  background: url("./img/beachpic3.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+/* RIGHT SIDE */
+
+.freind-request {
+  background-color: var(--section);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px !important;
+}
+
+.request-butn-row {
+  padding-top: 10px;
+}
+
+.section-title {
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.contact-list {
+  background-color: var(--section);
+  border-radius: 10px;
+  padding: 10px;
+  height: 60vh;
+}
+
+.elipsis {
+  color: grey;
+}
+
+.contact-list div {
+  display: flex;
+  align-items: center;
+}
+
+.decline-btn {
+  background-color: transparent !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+/* PROFILES */
+
+.prof2 {
+  background-image: url(./img/prof2.webp);
+  background-position: center;
+}
+
+.prof3 {
+  background-image: url(./img/prof3.webp);
+  background-position: center;
+}
+
+.girl1 {
+  background: url("./img/prof-girl1.webp");
+  background-size: cover;
+}
+
+.guy1 {
+  background: url("./img/prof-guy2.webp");
+  background-size: cover;
+}
+
+.girl2 {
+  background: url("./img/prof-girl2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.girl3 {
+  background: url("./img/girl3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.girl4 {
+  background: url("./img/girl4.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.guy3 {
+  background: url("./img/guy3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.guy4 {
+  background: url("./img/guy4.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.guy5 {
+  background: url("./img/guy5.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.post1 {
+  background: url("./img/poster1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* MOBILE DISPLAY */
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root {
+  min-width: 0 !important;
+}
+
+.mobile-container {
+  background-color: var(--background);
+  padding-top: 10px;
+}
+
+.mobile-search-row {
+  display: grid !important;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+  background-color: var(--section);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px !important;
+  margin-right: -5px !important;
+  margin-left: -5px !important;
+  padding-left: 0;
+}
+
+.mobile-search-bar-col {
+  width: 100%;
+}
+
+.mobile-search-bar {
+  border: 0;
+  width: fit-content;
+}
+
+.mobile-post-butn {
+  width: fit-content;
+}
+
+.mobile-post {
+  background-color: white;
+  margin-right: -5px !important;
+  margin-left: -5px !important;
+  margin-top: 10px !important;
+  padding-top: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.mobile-poster {
+  display: grid !important;
+  grid-template-columns: 1fr 20fr !important;
+}
+
+.mobile-poster {
+  display: grid !important;
+  grid-template-columns: max-content;
+  padding-left: 0 !important;
+}
+
+.mob-post-text {
+  padding-left: 0 !important;
+  padding-top: 5px;
+}
+
+.mobile-icon {
+  display: inline-block;
+}
+
+.mobile-photo-grid {
+  justify-content: center;
+  padding: 0 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.mob-image-col {
+  padding: 0 !important;
+}
+
+.left-mob {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: url("./img/left-image.webp");
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.right-top-mob {
+  border-top-right-radius: 10px;
+  background-image: url("./img/top-right-pic.webp");
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+}
+.right-bot-mob {
+  border-bottom-right-radius: 10px;
+  background-image: url("./img/bottom-right-pic.webp");
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile-text-only-post {
+  background-color: white;
+  margin-top: 10px !important;
+  margin-right: -5px !important;
+  margin-left: -5px !important;
+  padding: 10px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+}
+
+.left-mob2 {
+  background-image: url("./img/beachpic2.webp");
+}
+
+.right-top-mob2 {
+  background-image: url("./img/beachpic1.webp");
+}
+.right-bot-mob {
+  background-image: url("./img/beachpic3.webp");
+}
+
+.mobile-bot-post {
+  margin-bottom: 56px !important;
+}
